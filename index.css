@@ -77,9 +77,29 @@ body.dark .footer {
   padding-top: 13px;
   padding-bottom: 13px;
 }
+/* Menu */
 body.dark .footer_menu {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   background: var(--darkbgdark);
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  padding: 0px 20px;
+}
+.menu a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(151, 151, 151);
+}
+.menu a.active {
+  color: rgb(109, 1, 209);
+}
+.menu a:hover {
+  text-decoration: none;
 }
 
 /* swiecter */
@@ -250,25 +270,6 @@ body.dark .float button {
   }
   .footer_menu {
     display: block;
-  }
-  .menu {
-    display: flex;
-    justify-content: space-around;
-    font-size: 12px;
-    padding: 0px 20px;
-  }
-  .menu a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(151, 151, 151);
-  }
-  .menu a.active {
-    color: rgb(109, 1, 209);
-  }
-  .menu a:hover {
-    text-decoration: none;
   }
   .float {
     display: none;
